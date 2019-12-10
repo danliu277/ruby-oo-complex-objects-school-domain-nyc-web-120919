@@ -17,4 +17,10 @@ class School
   def grade(num)
     @roster[num]
   end
+  
+  def sort
+    @roster = @roster.map do |key, value|
+      value.sort
+    end
+  end
 end
