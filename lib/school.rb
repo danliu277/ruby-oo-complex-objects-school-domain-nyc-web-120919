@@ -19,8 +19,8 @@ class School
   end
   
   def sort
-    @roster = @roster.map do |key, value|
-      {key => value.sort}
+    @roster.each do |key, value|
+      @roster[key] = value.sort()
     end
   end
 end
